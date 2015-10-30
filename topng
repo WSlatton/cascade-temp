@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# convert jpgs in positive/ to pngs
+for f in positive/* 
+do
+  filename=$(basename "$f")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  convert $f $filename.png
+done
+
+# convert jpgs in negative/ to pngs
+for f in negative/*
+do
+  filename=$(basename "$f")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  convert $f $filename.png
+done

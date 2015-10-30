@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+./mergevec.py -v vecs -o fg.vec

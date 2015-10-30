@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cat fg.txt | while read f
+do
+  opencv_createsamples -img $f -bg bg.txt -vec vecs/$(basename $f.vec)
+done

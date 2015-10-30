@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ls negative/* | grep 'resize_.*.png' > bg.txt
+ls positive/* | grep 'resize_.*.png' > fg.txt

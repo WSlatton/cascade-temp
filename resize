@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for f in *.png
+do
+  convert $f -resize x256 resize_$f
+done

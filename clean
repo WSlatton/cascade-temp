@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cat fg.txt bg.txt | while read f
+do
+  rm $f
+done
+
+rm vecs/*
+rm haar/*
+rm fg.txt bg.txt
+rm fg.vec
