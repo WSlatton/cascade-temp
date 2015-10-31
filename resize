@@ -2,10 +2,10 @@
 
 for f in $(ls positive/*.png | grep '^[resize_]*')
 do
-  convert $f -resize x256 positive/$(basename f) 
+  convert $f -resize x256 positive/$(basename $f) 
 done
 
 for f in $(ls negative/*.png | grep '^[resize_]*')
 do
-  convert $f -resize x256 negative/$(basename f)
+  convert $f -resize x256 negative/$(basename $f)
 done
