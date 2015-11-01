@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-cat fg.txt bg.txt | while read f
-do
-  rm $f
-done
-
 rm vecs/*
 rm lbp/*
 rm fg.txt bg.txt

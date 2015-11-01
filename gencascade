@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+command -v opencv_traincascade > /dev/null 2 >& 1 && command -v opencv_createsamples > /dev/null 2 >& 1 || {
+    echo 'OpenCV is either not installed, or the utilities are not on your path. OpenCV can be downloaded from https://opencv.org/downloads.html.'
+}
+
 if [[ -f 'fg.vec' ]]
 then
     while [ true ]
