@@ -4,4 +4,4 @@ Temporary repository for cascade training files
 
 ## Usage
 
-run gencascade to create lbp/cascade.xml
+Run gencascade to create lbp/cascade.xml
