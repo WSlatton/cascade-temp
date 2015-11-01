@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [[ -f 'fg.vec' ]]
+then
+    while [ true ]
+    do
+        read -p 'Files detected. Do you wish to clean and regenerate them? [y/n] ' ans
+        case $ans in
+            [Yy]* ) ./clean; ./topng; ./resize; ./list; ./vec; ./merge; ./train; break ;;
+            [Nn]* ) break; ./train ;;
+            *) echo 'Please enter [y/n].' ;;
+        esac
+    done
+else
+    ./topng; ./resize; ./list; ./vec; ./merge; ./train
+fi

@@ -6,6 +6,6 @@ do
 done
 
 rm vecs/*
-rm haar/*
+rm lbp/*
 rm fg.txt bg.txt
 rm fg.vec

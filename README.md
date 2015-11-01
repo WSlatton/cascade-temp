@@ -10,4 +10,4 @@ Temporary repository for cascade training files
 4. run list to generate file lists
 5. run vec to generate samples
 6. run merge to merge samples into one .vec
-7. run train to create haar/cascade.xml
+7. run train to create lbp/cascade.xml
