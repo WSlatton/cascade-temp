@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-opencv_traincascade -data lbp -vec fg.vec -bg bg.txt -numNeg 52 -numPos 27 -numStages 3 -featureType LBP -minHitRate 0.99 -maxFalseAlarmRate 0.99
+rm lbp/*
+opencv_traincascade -data lbp -vec fg.vec -bg bg.txt -numNeg $(wc bg.txt) -numPos $(wc fg.txt) -numStages 12 -featureType LBP -maxFalseAlarmRate 0.99

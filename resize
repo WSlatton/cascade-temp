@@ -2,5 +2,8 @@
 
 for f in $(ls {positive/*.png,negative/*.png})
 do
-  convert $f -resize x256 positive/$(basename $f) 
+  if [[ ! $(file $f | grep -q "x 256") ]];
+  then
+    convert $f -resize x256 $f 
+  fi
 done
